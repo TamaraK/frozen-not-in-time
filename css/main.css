@@ -7,11 +7,18 @@ html {
 h1 {
   color: #990073;
   transform: rotate(-10deg);
+  text-shadow: 1px 1px rgba(0, 0, 0, .2);
+  left: 50px;
+  top: 70px;
 }
 
 p {
   color: #c09;
   transform: rotate(-6deg);
+  text-shadow: 1px 1px rgba(0, 0, 0, .2);
+  max-width: 19em;
+  margin-top: 3.5em;
+
 }
 
 .btn {
@@ -20,12 +27,15 @@ p {
   margin-left: .5em;
 }
 
+.btn-ghost {
+  border-color: #990073;
+}
+
 .btn-ghost:hover {
   background-color: rgba(153, 0, 115, .2);
   border-color: #990073;
   color: #c09;
 }
-
 
 .intro p {
   margin-left: .5em;
@@ -47,49 +57,128 @@ p {
 }
 
 .cherry {
-  left: calc(50% - 100px);
-  z-index: 10;
+  animation: cherry-drop .5s linear forwards;
+  animation-delay: 2s;
+  width: 180px;
+  z-index: 5;
+  left: 65px;
+  top: -200px;
+}
+
+@keyframes cherry-drop {
+
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: -45px;
+  }
+
 }
 
 .melty {
-  left: calc(50% - 160px);
-  top: calc(50% - 60px);
-  z-index: 9;
+  animation: melty-drop .5s linear forwards;
+  animation-delay: 1.5s;
+  width: 180px;
+  z-index: 4;
+  left: 60px;
+  top: -200px;
+}
+
+@keyframes melty-drop {
+
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: 35px;
+  }
+
 }
 
 .choc {
-  left: calc(50% - 140px);
-  top: 180px;
-  z-index: 8;
+  animation: choc-drop .5s linear forwards;
+  animation-delay: 1s;
+  width: 180px;
+  z-index: 3;
+  left: 75px;
+  top: -200px;
 }
 
-.green {
-  left: calc(50% - 160px);
-  z-index: 7;
-  top: 300px;
+@keyframes choc-drop {
+
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: 110px;
+  }
+
+}
+
+.mint {
+  animation: mint-drop .5s linear forwards;
+  animation-delay: .5s;
+  width: 180px;
+  z-index: 1;
+  left: 70px;
+  top: -200px;
+}
+
+@keyframes mint-drop {
+
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: 190px;
+  }
+
 }
 
 .cone {
-  left: calc(50% - 150px);
-  z-index: 11;
-  top: 430px;
+  animation: cone-drop .5s linear forwards;
+  width: 180px;
+  z-index: 2;
+  left: 70px;
+  top: -200px;
 }
 
-@keyframes opacity {
+@keyframes cone-drop {
+
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: 300px;
+  }
+
+}
+
+.text {
+  animation: text-appear .5s linear forwards;
+  animation-delay: 2.5s;
+  opacity: 0;
+}
+
+@keyframes text-appear {
 
   0% {
     opacity: 0;
   }
 
   50% {
-    opacity: 0;
-  }
-
-  75% {
-    opacity: 0;
+    filter: blur(5px);
   }
 
   100% {
-    opacity: 1;
+    opacity: 100;
+    filter: blur(0);
   }
+
 }
