@@ -1,22 +1,95 @@
 html {
-  background: repeating-linear-gradient(-30deg, #c9fcff, 10px, #d4fdff 10px, #d4fdff 20px);
+  background: repeating-linear-gradient(-30deg, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
   border-top: 10px solid #b3fbff;
   font-family: "Fredoka One", sans-serif;
 }
+
 h1 {
   color: #990073;
+  transform: rotate(-10deg);
 }
 
 p {
   color: #c09;
+  transform: rotate(-6deg);
 }
 
 .btn {
   border-color: #990073;
   color: #c09;
+  margin-left: .5em;
 }
 
 .btn-ghost:hover {
   background-color: rgba(153, 0, 115, .2);
   border-color: #990073;
+  color: #c09;
+}
+
+
+.intro p {
+  margin-left: .5em;
+  max-width: 19em;
+}
+
+.intro {
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.25);
+  transform-origin: left center;
+  animation: opacity 5s linear;
+}
+
+.ice-wrapper {
+  position: relative;
+}
+
+.ball {
+  position: absolute;
+}
+
+.cherry {
+  left: calc(50% - 100px);
+  z-index: 10;
+}
+
+.melty {
+  left: calc(50% - 160px);
+  top: calc(50% - 60px);
+  z-index: 9;
+}
+
+.choc {
+  left: calc(50% - 140px);
+  top: 180px;
+  z-index: 8;
+}
+
+.green {
+  left: calc(50% - 160px);
+  z-index: 7;
+  top: 300px;
+}
+
+.cone {
+  left: calc(50% - 150px);
+  z-index: 11;
+  top: 430px;
+}
+
+@keyframes opacity {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
