@@ -1,12 +1,13 @@
+
 html {
-  background: repeating-linear-gradient(-30deg, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
-  border-top: 10px solid #b3fbff;
   font-family: "Fredoka One", sans-serif;
+  background: repeating-linear-gradient(to top left, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
+  border-top: 10px #b3fbff solid;
 }
 
 h1 {
   color: #990073;
-  transform: rotate(-10deg);
+  transform: rotate(-10.5deg);
   text-shadow: 1px 1px rgba(0, 0, 0, .2);
   left: 50px;
   top: 70px;
@@ -14,11 +15,16 @@ h1 {
 
 p {
   color: #c09;
-  transform: rotate(-6deg);
-  text-shadow: 1px 1px rgba(0, 0, 0, .2);
   max-width: 19em;
+  transform: rotate(-5.5deg);
+  text-shadow: 1px 1px rgba(0, 0, 0, .2);
   margin-top: 3.5em;
+}
 
+a {
+  color: #c09;
+  text-decoration: none;
+  text-shadow: 1px 1px rgba(0, 0, 0, .2);
 }
 
 .btn {
