@@ -56,8 +56,8 @@ img {
   animation: cherry 700ms linear forwards;
   top: -1200px;
   animation-delay: 2s;
-  left: calc(50% - 30px);
-  width: 100px;
+  left: calc(50% - -215px);
+  width: 200px;
   z-index: 10;
 }
 
@@ -65,8 +65,8 @@ img {
   animation: fudge 600ms linear forwards;
   top: -1200px;
   animation-delay: 2s;
-  left: calc(50% - 80px);
-  width: 130px;
+  left: calc(50% - -190px);
+  width: 175px;
   z-index: 9;
 }
 
@@ -74,26 +74,26 @@ img {
   animation: chocolate-chip 500ms linear forwards;
   animation-delay: 2s;
   top: -1200px;
-  left: calc(50% - 70px);
-  width: 130px;
+  left: calc(50% - -200px);
+  width: 175px;
   z-index: 8;
 }
 
 .mint-chip {
   animation: mint-chip 400ms linear forwards;
   animation-delay: 2s;
-  left: calc(50% - 90px);
+  left: calc(50% - -190px);
   top: -1200px;
-  width: 130px;
+  width: 175px;
   z-index: 7;
 }
 
 .cone {
   animation: cone 300ms linear forwards;
   animation-delay: 2s;
-  left: calc(50% - 90px);
+  left: calc(50% - -190px);
   top: -1200px;
-  width: 130px;
+  width: 185px;
   z-index: 11;
 }
 
@@ -101,11 +101,14 @@ img {
 
   0% {
     opacity: 0;
-    filter: blur(10px);
+  }
+
+  50% {
+    filter: blur(5px);
   }
 
   100% {
-    opacity: 1;
+    opacity: 100;
     filter: blur(0);
   }
 }
@@ -117,7 +120,7 @@ img {
   }
 
   100% {
-    top: 10px;
+    top: 15px;
   }
 }
 
