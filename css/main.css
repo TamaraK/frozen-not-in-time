@@ -1,4 +1,3 @@
-
 html {
   border-bottom: 10px solid #b3fbff;
   font-family: "Fredoka One", sans-serif;
@@ -35,7 +34,11 @@ p {
   color: #c09;
 }
 
-.para {
+.intro p {
+  margin-left: .5em;
+}
+
+.intro {
   opacity: 0;
   text-shadow: 1px 2px rgba(0, 0, 0, .25);
   transform-origin: left center;
@@ -44,7 +47,7 @@ p {
   padding-left: 1em;
 }
 
-.creamy-wrapper {
+.ice-wrapper {
   position: relative;
 }
 
@@ -56,8 +59,8 @@ img {
   animation: cherry 700ms linear forwards;
   top: -1200px;
   animation-delay: 2s;
-  left: calc(50% - -215px);
-  width: 200px;
+  left: calc(50% - 40px);
+  width: 125px;
   z-index: 10;
 }
 
@@ -65,8 +68,8 @@ img {
   animation: fudge 600ms linear forwards;
   top: -1200px;
   animation-delay: 2s;
-  left: calc(50% - -190px);
-  width: 175px;
+  left: calc(50% - 80px);
+  width: 150px;
   z-index: 9;
 }
 
@@ -74,26 +77,26 @@ img {
   animation: chocolate-chip 500ms linear forwards;
   animation-delay: 2s;
   top: -1200px;
-  left: calc(50% - -200px);
-  width: 175px;
+  left: calc(50% - 70px);
+  width: 150px;
   z-index: 8;
 }
 
 .mint-chip {
   animation: mint-chip 400ms linear forwards;
   animation-delay: 2s;
-  left: calc(50% - -190px);
+  left: calc(50% - 90px);
   top: -1200px;
-  width: 175px;
+  width: 150px;
   z-index: 7;
 }
 
 .cone {
   animation: cone 300ms linear forwards;
   animation-delay: 2s;
-  left: calc(50% - -190px);
+  left: calc(50% - 90px);
   top: -1200px;
-  width: 185px;
+  width: 150px;
   z-index: 11;
 }
 
@@ -101,14 +104,11 @@ img {
 
   0% {
     opacity: 0;
-  }
-
-  50% {
     filter: blur(5px);
   }
 
   100% {
-    opacity: 100;
+    opacity: 1;
     filter: blur(0);
   }
 }
@@ -120,14 +120,14 @@ img {
   }
 
   100% {
-    top: 15px;
+    top: 10px;
   }
 }
 
 @keyframes fudge {
 
   0% {
-    top: -1200px;
+    top: -1500px;
   }
 
   100% {
@@ -138,7 +138,7 @@ img {
 @keyframes chocolate-chip {
 
   0% {
-    top: -1200px;
+    top: -1500px;
   }
 
   100% {
@@ -149,7 +149,7 @@ img {
 @keyframes mint-chip {
 
   0% {
-    top: -1200px;
+    top: -1500px;
   }
 
   100% {
@@ -160,7 +160,7 @@ img {
 @keyframes cone {
 
   0% {
-    top: -1200px;
+    top: -1500px;
   }
 
   100% {
