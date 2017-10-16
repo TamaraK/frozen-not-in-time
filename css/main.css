@@ -116,7 +116,7 @@ img {
 @keyframes cherry {
 
   0% {
-    top: -1200px;
+    top: -1500px;
   }
 
   100% {
@@ -171,8 +171,8 @@ img {
 @media only screen and (min-width: 90em) {
 
   .banner {
-    padding-left: 10em;
-    padding-right: 9em;
+    padding-left: 11em;
+    padding-right: 10em;
   }
 
   .intro {
