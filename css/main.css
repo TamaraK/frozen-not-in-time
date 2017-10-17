@@ -59,8 +59,8 @@ img {
   animation: cherry 700ms linear forwards;
   top: -1200px;
   animation-delay: 2s;
-  left: calc(50% - 40px);
-  width: 145px;
+  left: calc(50% - 80px);
+  width: 175px;
   z-index: 10;
 }
 
@@ -120,7 +120,7 @@ img {
   }
 
   100% {
-    top: -8px;
+    top: -37px;
   }
 }
 
